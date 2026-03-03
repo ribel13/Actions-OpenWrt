@@ -54,7 +54,8 @@ jobs:
       UPLOAD_FIRMWARE: true
       UPLOAD_RELEASE: true
       OPENWRT_NAME: openwrt
-      OPENWRT_NAME1: x86_64
+      # OPENWRT_NAME1: x86_64
+      OPENWRT_NAME1: armsr
       TZ: Asia/Shanghai
 
     steps:
