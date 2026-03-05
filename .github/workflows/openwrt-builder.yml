@@ -31,7 +31,7 @@ on:
       repository_branch:
         description: '分支'
         required: false
-        default: 'openwrt-25.12'
+        default: 'openwrt-25.12.0'
       enable_ssh:
         description: '开启 SSH 调试?'
         type: boolean
@@ -45,7 +45,7 @@ jobs:
 
     env:
       REPO_URL: "https://github.com/openwrt/openwrt.git"
-      REPO_BRANCH: openwrt-25.12
+      REPO_BRANCH: openwrt-25.12.0
       FEEDS_CONF: feeds.conf.default
       # CONFIG_FILE: .config
       CONFIG_FILE: .frdmx
