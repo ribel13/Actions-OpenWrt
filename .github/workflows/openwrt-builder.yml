@@ -31,7 +31,7 @@ on:
       repository_branch:
         description: '分支'
         required: false
-        default: 'openwrt-25.12.0'
+        default: 'openwrt-25.12'
       enable_ssh:
         description: '开启 SSH 调试?'
         type: boolean
