@@ -45,7 +45,6 @@ jobs:
 
     env:
       REPO_URL: "https://github.com/openwrt/openwrt.git"
-      #REPO_URL: https://downloads.openwrt.org/releases
       REPO_BRANCH: openwrt-25.12
       FEEDS_CONF: feeds.conf.default
       # CONFIG_FILE: .config
