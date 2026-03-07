@@ -47,7 +47,7 @@ jobs:
       REPO_URL: "https://github.com/openwrt/openwrt.git"
       #REPO_URL: https://downloads.openwrt.org/releases
       REPO_BRANCH: openwrt-25.12
-      SUB_BRANCH: 25.12.0
+      SUB_BRANCH: 25.12.0-rc5
       FEEDS_CONF: feeds.conf.default
       # CONFIG_FILE: .config
       CONFIG_FILE: .frdmx
@@ -103,7 +103,7 @@ jobs:
         run: |
           df -hT $PWD
           # 优化：添加 --depth 1 进行浅克隆，减少下载量和空间占用
-          git clone $REPO_URL -b $REPO_BRANCH openwrt --depth 1
+          git clone $REPO_URL -b $REPO_BRANCH -b $SUB_BRANCH openwrt --depth 1
           ln -sf /workdir/openwrt $GITHUB_WORKSPACE/openwrt
 
       - name: Load custom feeds
